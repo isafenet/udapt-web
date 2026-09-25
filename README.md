@@ -12,3 +12,6 @@ Plain static HTML/CSS, no build step — matches the `airreveal-legal` / `glpmgr
 - `guide.html` — plain-English user guide (linked from the app's Settings → Help and information)
 
 Pricing, feature copy and privacy claims here should stay in sync with the main app repo (`docs/SUBSCRIPTION.md`, `docs/PLAN_ENGINE_SPEC.md`, `docs/PRIVACY_POLICY.md`) — update both sides when either changes.
+
+## App images
+`images/flat-*.webp` and the `images/0N-*.webp` panels are generated, not hand-made: run `scripts/capture_screenshots.sh <dir>` in the main Udapt repo (simulator), then `python3 scripts/make_images.py <dir>` here. Re-run whenever the app's screens change.
