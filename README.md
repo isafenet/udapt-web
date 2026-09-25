@@ -8,5 +8,7 @@ Plain static HTML/CSS, no build step — matches the `airreveal-legal` / `glpmgr
 - `privacy.html` — Privacy Policy (kept in sync with `docs/PRIVACY_POLICY.md` in the main `Udapt` repo)
 - `terms.html` — Terms of Use, including subscription pricing and the wellness/no-medical-advice disclaimer
 - `support.html` — FAQ and contact
+- `science.html` — the research behind each rule, with charts and cited sources (generated from the rules in `docs/PLAN_ENGINE_SPEC.md` and sources in `docs/EVIDENCE.md`; keep in sync)
+- `guide.html` — plain-English user guide (linked from the app's Settings → Help and information)
 
 Pricing, feature copy and privacy claims here should stay in sync with the main app repo (`docs/SUBSCRIPTION.md`, `docs/PLAN_ENGINE_SPEC.md`, `docs/PRIVACY_POLICY.md`) — update both sides when either changes.
