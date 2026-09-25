@@ -369,3 +369,9 @@ details.tbl summary{cursor:pointer;color:var(--accent);font-weight:600}
 .card .cite{margin-top:12px;font-size:.84rem}
 .card .cite a{color:var(--ink-3);text-decoration-color:var(--line)}
 .card .cite a:hover{color:var(--accent)}
+
+/* Apple Watch screens in "On your wrist" */
+.watch-row{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;margin:8px auto 34px}
+.watch-row figure{margin:0;text-align:center}
+.watch-row .watch{width:170px}
+.watch-row figcaption{margin-top:12px;font:700 .95rem var(--font-display);color:var(--ink-2)}

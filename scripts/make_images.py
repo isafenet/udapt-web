@@ -118,6 +118,11 @@ def flat(name, shot):
 
 for name, shot in FLAT.items():
     flat(name, shot)
+# Apple Watch captures (optional — only if the capture script found a watchOS simulator).
+for shot in ("watch-today", "watch-workout", "watch-rest"):
+    if (SRC / f"{shot}.png").exists():
+        im = Image.open(SRC / f"{shot}.png").convert("RGB")
+        im.resize((396, round(im.height * 396 / im.width)), Image.LANCZOS).save(OUT / f"{shot}.webp", quality=90, method=6)
 for p in PANELS:
     panel(*p)
 print("wrote", len(FLAT), "flat images and", len(PANELS), "panels to", OUT)
