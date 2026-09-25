@@ -17,7 +17,7 @@ FONT = "/System/Library/Fonts/SFNS.ttf"
 # flat image name -> screenshot name
 FLAT = {"today": "today", "workout": "workout", "food": "food", "foodsearch": "foodsearch",
         "joint": "training", "settings": "settings", "readiness": "readiness", "fuel": "fuel", "guide": "guide",
-        "training": "trainingwhy"}
+        "training": "trainingwhy", "widgets": "widgets"}
 
 # panel file, headline, subline, screenshot, accent colour (the background's brightest band)
 PANELS = [
