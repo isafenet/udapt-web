@@ -23,7 +23,7 @@ FLAT = {"today": "today", "workout": "workout", "food": "food", "foodsearch": "f
 PANELS = [
     ("01-ready-in-one-glance", "Ready in one glance", "Readiness, training and food — adjusted together every morning.", "today", (30, 100, 90)),
     ("02-training-that-adapts", "Training that adapts", "Weights go up when you’re ready, and ease off when you’re not.", "workout", (36, 70, 116)),
-    ("03-food-that-moves-with-you", "Food that moves with you", "Calories, protein, carbs and fat that shift with your training.", "fuel", (112, 83, 38)),
+    ("03-food-that-moves-with-you", "Food that moves with you", "Calories, protein, carbs and fat that shift with your training.", "today-food", (112, 83, 38)),
     ("04-log-food-your-way", "Log food your way", "Search, scan a barcode, or just say what you ate.", "foodsearch", (31, 94, 109)),
     ("05-train-around-an-injury", "Train around an injury", "Protect a joint and Udapt swaps out exercises that load it.", "training", (108, 63, 48)),
     ("06-home-or-gym", "Home or gym, your call", "Full programs either way — switch any time.", "onboarding-schedule", (55, 58, 109)),
