@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>New in Udapt 1.5: a morning reading, Repeat a week and race pace</title>
+<meta name="description" content="Out now in Udapt 1.5: a 1-minute morning reading if you don't wear your Apple Watch in bed, Repeat a week in run/walk, a race pace for race day, and widgets that show today's run, ride or swim.">
+<meta name="theme-color" content="#159b9a">
+<link rel="canonical" href="https://udapt.isafenet.app/udapt-1-5.html">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Udapt">
+<meta property="og:title" content="New in Udapt 1.5: a morning reading, Repeat a week and race pace">
+<meta property="og:description" content="Out now in Udapt 1.5: a 1-minute morning reading if you don't wear your Apple Watch in bed, Repeat a week in run/walk, a race pace for race day, and widgets that show today's run, ride or swim.">
+<meta property="og:url" content="https://udapt.isafenet.app/udapt-1-5.html">
+<meta property="og:image" content="https://udapt.isafenet.app/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="New in Udapt 1.5: a morning reading, Repeat a week and race pace">
+<meta name="twitter:description" content="Out now in Udapt 1.5: a 1-minute morning reading if you don't wear your Apple Watch in bed, Repeat a week in run/walk, a race pace for race day, and widgets that show today's run, ride or swim.">
+<meta name="twitter:image" content="https://udapt.isafenet.app/images/og.jpg">
+<meta name="apple-itunes-app" content="app-id=6815828206">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"New in Udapt 1.5: a morning reading, Repeat a week and race pace","description":"Out now in Udapt 1.5: a 1-minute morning reading if you don't wear your Apple Watch in bed, Repeat a week in run/walk, a race pace for race day, and widgets that show today's run, ride or swim.","url":"https://udapt.isafenet.app/udapt-1-5.html","inLanguage":"en-GB","datePublished":"{{UDAPT_1_5_RELEASE_ISO}}","dateModified":"{{UDAPT_1_5_RELEASE_ISO}}","image":"https://udapt.isafenet.app/images/photo-v14-watch.webp","author":{"@type":"Organization","name":"iSafeNet","url":"https://isafenet.app/"},"publisher":{"@type":"Organization","name":"iSafeNet","url":"https://isafenet.app/"}}</script>
+<link rel="preload" href="fonts/archivo-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600 900;
+  font-stretch: 112% 125%;
+  font-display: swap;
+  src: url(fonts/archivo-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600 900;
+  font-stretch: 112% 125%;
+  font-display: swap;
+  src: url(fonts/archivo-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/public-sans-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/public-sans-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Layout: a dawn-road opener with a live readiness card; a four-step morning sequence; wide type, numbers as the hero. */
+:root{
+  --ground:#F3F5F1; --card:#FFFFFF; --ink:#0E1A15; --ink-soft:#55635C; --line:#D9E0DA;
+  --go:#14915F; --go-ink:#0D7049; --caution:#D97A1E; --forest:#0D2A20; --on-forest:#EAF3EE;
+  --display:"Archivo", "Arial Black", "Helvetica Neue", system-ui, sans-serif;
+  --body:"Public Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --wrap:1140px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ground:#09110E; --card:#111D18; --ink:#E8F0EB; --ink-soft:#9EAEA6; --line:#20302A;
+  --go:#3CD58E; --go-ink:#7BE6B3; --caution:#F0A257; --forest:#0F2C22; --on-forest:#EAF3EE; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#09110E; --card:#111D18; --ink:#E8F0EB; --ink-soft:#9EAEA6; --line:#20302A;
+  --go:#3CD58E; --go-ink:#7BE6B3; --caution:#F0A257; --forest:#0F2C22; --on-forest:#EAF3EE; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font:400 1.05rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+p{margin:0}
+:focus-visible{outline:3px solid var(--go);outline-offset:3px;border-radius:6px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero h1 .u{color:#3CD58E}
+h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;line-height:1.02}
+h1{font-variation-settings:"wdth" 125;font-weight:900;font-size:clamp(2.7rem,7.2vw,5.6rem);letter-spacing:-.025em;text-transform:uppercase}
+h2{font-variation-settings:"wdth" 125;font-weight:800;font-size:clamp(1.9rem,4.4vw,3.2rem);letter-spacing:-.02em}
+h3{font-variation-settings:"wdth" 112;font-weight:600;font-size:1.25rem}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
+.label{font:700 .76rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--go-ink)}
+.lede{color:var(--ink-soft);font-size:1.13rem;max-width:56ch}
+section{padding-block:clamp(56px,9vw,110px)}
+.num{font-variant-numeric:tabular-nums}
+
+.top{position:absolute;inset-inline:0;top:0;z-index:4;padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;gap:18px;padding-block:18px}
+.brand{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font:900 1.2rem var(--display);font-variation-settings:"wdth" 125;letter-spacing:.02em;text-transform:uppercase}
+.brand img{width:34px;height:34px;border-radius:9px}
+.top nav{margin-left:auto;display:flex;gap:22px}
+.top nav a{color:rgba(255,255,255,.88);text-decoration:none;font-size:.94rem}
+@media (max-width:760px){.top nav{display:none}}
+
+.store{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;text-decoration:none;border-radius:12px;padding:11px 18px 11px 14px;border:1px solid rgba(255,255,255,.28)}
+.store svg{width:24px;height:24px;fill:#fff}
+.store small{display:block;font-size:.66rem;line-height:1;opacity:.85}
+.store b{display:block;font:800 1.08rem/1.1 var(--display);font-variation-settings:"wdth" 112}
+
+.hero{position:relative;color:#fff;overflow:hidden;background:#05100c}
+.hero::before{content:"";position:absolute;inset:0;background:url(images/photo-dawn-run.webp) center 45%/cover;opacity:.9}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,12,9,.85) 0%,rgba(3,12,9,.45) 55%,rgba(3,12,9,.15) 100%),linear-gradient(0deg,rgba(3,12,9,.7),transparent 40%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;padding-block:clamp(120px,15vw,170px) clamp(56px,8vw,96px)}
+.hero .lede{color:rgba(255,255,255,.88);margin-top:20px}
+.hero .label{color:var(--go)}
+.hero-copy{display:grid;gap:0;min-width:0}
+.hero-copy .label{margin-bottom:18px}
+.cta{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center;margin-top:30px}
+.cta span{font-size:.9rem;color:rgba(255,255,255,.82)}
+@media (max-width:880px){.hero .wrap{grid-template-columns:1fr}}
+
+/* live readiness card */
+.ready{background:rgba(9,22,17,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:22px;display:grid;gap:14px;width:min(380px,100%);justify-self:end}
+.ready .head{display:flex;align-items:center;gap:16px}
+.gauge{width:76px;height:76px;flex:none;border-radius:50%;background:conic-gradient(#3CD58E calc(var(--v)*1%),rgba(255,255,255,.14) 0);display:grid;place-items:center}
+.gauge span{width:60px;height:60px;border-radius:50%;background:#0b1913;display:grid;place-items:center;font:900 1.9rem var(--display)}
+.ready .head b{display:block;font:800 1.25rem var(--display);font-variation-settings:"wdth" 112}
+.ready .head small{color:rgba(255,255,255,.75);font-size:.88rem}
+.sig{display:grid;gap:8px}
+.sig div{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-size:.86rem}
+.sig i{grid-column:1/-1;height:6px;border-radius:9px;background:rgba(255,255,255,.12);overflow:hidden;display:block}
+.sig i::before{content:"";display:block;height:100%;width:var(--w);background:#3CD58E;border-radius:9px;transition:width 1.2s ease}
+.sig .low i::before{background:#F0A257}
+.sig em{font-style:normal;color:#7BE6B3}
+.sig .low em{color:#F0A257}
+.verdict{display:flex;gap:10px;align-items:center;background:rgba(60,213,142,.14);border-radius:12px;padding:10px 12px;font-weight:700}
+.verdict svg{width:20px;height:20px;stroke:#3CD58E;fill:none;stroke-width:2.6}
+.ready button{justify-self:start;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:999px;padding:6px 14px;font:600 .82rem var(--body);cursor:pointer}
+
+/* morning sequence */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;gap:10px;align-content:start;counter-increment:s}
+.step::before{content:counter(s,decimal-leading-zero);font:900 2.4rem var(--display);font-variation-settings:"wdth" 125;color:var(--go)}
+.step .time{font:700 .82rem var(--body);color:var(--ink-soft);letter-spacing:.06em}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* split panels */
+.split{display:grid;grid-template-columns:1fr 1fr;border-radius:30px;overflow:hidden;background:var(--forest);color:var(--on-forest)}
+.split .photo{min-height:360px;background-size:cover;background-position:center}
+.split .copy{padding:clamp(28px,5vw,56px);display:grid;gap:16px;align-content:center;min-width:0}
+.split .copy .label{color:#7BE6B3}
+.split .copy p{color:rgba(234,243,238,.86)}
+.split .shots{display:flex;gap:14px;margin-top:8px}
+.split .shots img{width:min(180px,40%);border-radius:24px;border:6px solid #000}
+.split.flip .photo{order:2}
+@media (max-width:860px){.split{grid-template-columns:1fr}.split.flip .photo{order:0}}
+.split + .split{margin-top:22px}
+
+.ticks{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:8px}
+.ticks li{display:grid;grid-template-columns:20px 1fr;gap:10px}
+.ticks svg{width:18px;height:18px;stroke:#3CD58E;fill:none;stroke-width:2.8;margin-top:4px}
+
+/* explained */
+.explain{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,6vw,70px);align-items:center}
+.reason{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;display:grid;gap:14px}
+.reason .change{display:flex;justify-content:space-between;gap:12px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:12px}
+.reason .change b{font:800 1.5rem var(--display);font-variation-settings:"wdth" 112}
+.reason .delta{color:var(--caution);font-weight:700}
+.reason cite{font-style:normal;font-size:.86rem;color:var(--ink-soft);border-left:3px solid var(--go);padding-left:10px}
+@media (max-width:860px){.explain{grid-template-columns:1fr}}
+
+/* gallery */
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:min(230px,60vw);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 18px;max-width:var(--wrap);margin-inline:auto}
+.strip img{border-radius:20px;scroll-snap-align:start}
+
+/* watch + extras */
+.extras{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.extra{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;gap:10px;align-content:start}
+.extra .pics{display:flex;gap:10px;justify-content:center;background:var(--ground);border-radius:14px;padding:16px;min-height:190px;align-items:center}
+.extra .pics img{max-height:160px;width:auto}
+@media (max-width:860px){.extras{grid-template-columns:1fr}}
+
+/* price */
+.price{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}
+.price .one{background:var(--forest);color:var(--on-forest);border-radius:28px;padding:clamp(26px,5vw,48px);display:grid;gap:16px}
+.price .one .label{color:#7BE6B3}
+.amount{display:flex;gap:28px;flex-wrap:wrap}
+.amount div b{display:block;font:900 2.6rem/1 var(--display);font-variation-settings:"wdth" 125}
+.amount div span{font-size:.9rem;color:rgba(234,243,238,.78)}
+.price .incl{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px}
+@media (max-width:860px){.price{grid-template-columns:1fr}}
+
+.faq{display:grid;gap:10px;max-width:840px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:2px 20px}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;padding-block:15px;font:600 1.05rem var(--display);font-variation-settings:"wdth" 112}
+.faq summary::after{content:"+";color:var(--go-ink);font-size:1.3rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--ink-soft);padding-bottom:16px}
+.head{display:grid;gap:12px;max-width:760px}
+
+footer{padding-block:36px 60px;color:var(--ink-soft);font-size:.88rem}
+footer a{color:inherit}
+footer .wrap{display:grid;gap:10px}
+@media (prefers-reduced-motion:reduce){.sig i::before{transition:none}}
+</style>
+
+<style>
+.peek-badge{display:inline-block;background:#3CD58E;color:#06140f;border-radius:999px;padding:4px 12px;font-weight:700;font-size:.82rem;letter-spacing:.02em}
+.peek-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:18px}
+.peek-note{color:var(--ink-soft);font-size:.9rem}
+</style>
+<style>
+.watches{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.watches img{width:min(132px,30%);border-radius:30px;border:5px solid #1b2622}
+.hero .shots img{border-radius:34px;border:7px solid #000;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.3rem)}
+.note{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;gap:8px;max-width:760px}
+</style>
+<style>/* Apple's App Store badge, as supplied: 48 px high, a quarter of its height clear round it */.store-badge{display:inline-block;padding:12px 0;line-height:0}.store-badge img{display:block;height:48px;width:auto}.store-text{font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px}</style>
+</head>
+<body>
+<!-- Udapt 1.5 release page. Release date: {{UDAPT_1_5_RELEASE_ISO}} in the Article data above (fill in at release).
+     TODO screenshots from the 1.5 build (not taken yet): the morning reading in Settings › You and your goal and the
+     check-in's "I did my morning Breathe reading" (UDAPT_MORNING_READING=1), "Repeat a week" (UDAPT_RUNWALK=repeat),
+     the race-goal card with its race pace, and the widgets with today's run (UDAPT_WIDGET_GALLERY=1). Until then
+     the page uses existing photos and one 1.3 screen. -->
+
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="images/icon-192.png" alt="">Udapt</a>
+    <nav aria-label="Main"><a href="index.html">Home</a><a href="science.html">The science</a><a href="guide.html">User guide</a><a href="support.html">Support</a></nav>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="label"><span class="peek-badge">Out now</span> · New in Udapt 1.5</p>
+      <h1>A morning reading, and a pace for race day.</h1>
+      <p class="lede">If you don't wear your Apple Watch in bed, a 1-minute Breathe session when you wake can now stand in for the overnight reading. Run/walk lets you repeat a week whenever you like, race goals give you a pace for race day, and widgets show today's run, ride or swim.</p>
+      <div class="peek-cta">
+        <a class="store-badge" href="https://apps.apple.com/app/udapt-workout-food-planner/id6815828206"><img src="images/app-store-badge-en-gb.svg" alt="Download on the App Store" width="144" height="48"></a>
+        <span class="peek-note">A free update for everyone.</span>
+      </div>
+    </div>
+    <div class="shots" style="justify-content:center"><img src="images/flat13-readiness.webp" alt="Your readiness: Go, 2 of 2 checks in range, and where it comes from" style="max-width:300px"></div>
+  </div>
+</header>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <article class="split">
+      <div class="photo" style="background-image:url(images/photo-v14-watch.webp)" role="img" aria-label="Checking a smartwatch outdoors"></div>
+      <div class="copy">
+        <p class="label">Morning reading</p>
+        <h2>No Watch in bed? One minute when you wake.</h2>
+        <p>Your readiness compares your heart signals with your own last 10 readings, and until now they came from the night. Turn on the morning reading and a 1-minute Breathe session on your Apple Watch can stand in on mornings without one. <a href="science.html#morning-reading" style="color:inherit">The research behind it, and its limits</a>.</p>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>When you wake:</b> sit still for about a minute, then do a 1-minute Breathe session, sitting and breathing normally, before coffee, food or exercise. You don't need to follow the animation.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Your check-in asks</b> whether you took it that way, on your iPhone or Apple Watch. If not, the reading doesn't count.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Morning readings are compared only with your other morning readings. On a day with both, the overnight reading is used.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Off until you turn it on</b> in Settings › You and your goal. Only then does Udapt ask Apple Health for your Breathe sessions and their heartbeat timings.</span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="split flip">
+      <div class="photo" style="background-image:url(images/photo-v14-runwalk.webp)" role="img" aria-label="A runner on a park path"></div>
+      <div class="copy">
+        <p class="label">Running</p>
+        <h2>Repeat a week. Pace your race.</h2>
+        <p>Run/walk follows the NHS's advice: you can come back to the plan at any time, and repeating a run or a week is fine.</p>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Repeat a week:</b> start this week or an earlier one again from its first run, whenever you like.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>After a break,</b> the plan carries on where you left off. It never moves you back on its own.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Race pace for race day:</b> with a race goal from 5K to half marathon, Udapt gives a race pace from a race you ran in the past year. Set your goal before 1.5? Edit it and add when you ran your recent race.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Your training runs stay easy, by the talk test. On race day Udapt adds: "On a hot day, expect to be slower."</span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="split">
+      <div class="photo" style="background-image:url(images/photo-v13-ride.webp)" role="img" aria-label="A cyclist on an open road"></div>
+      <div class="copy">
+        <p class="label">Also new</p>
+        <h2>Widgets, privacy and a fix.</h2>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Widgets</b> show today's run, ride or swim, and run/walk shows its week. Run days no longer say "Rest day".</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Siri and Shortcuts</b> now ask you to unlock your iPhone first, and <b>Delete all my data</b> also clears your Apple Watch.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Menopause mode:</b> hot flushes and achy joints from your check-in were only kept when GLP-1 mode was on too. Fixed: they now show in "Your last two weeks" in Your readiness.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>A thank-you:</b> subscribed since before 13 October 2026, and your plan renews? Today has a card with a code for a free month, which starts at your next renewal.</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap head">
+    <p class="label">When</p>
+    <h2>Udapt 1.5 is out now.</h2>
+    <p>It's a free update for everyone. If you already have Udapt, update it from the App Store; if not, get it today. See what came in <a href="udapt-1-4.html" style="color:inherit">Udapt 1.4</a>, or read how to use the new features in the <a href="guide.html" style="color:inherit">user guide</a>.</p>
+    <div class="peek-cta"><a class="store-text" href="https://apps.apple.com/app/udapt-workout-food-planner/id6815828206">Get it on the App Store</a></div>
+    <p class="peek-note">Please check with your doctor or a health professional before you start a new exercise plan.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><a href="guide.html">User guide</a> · <a href="science.html">The science</a> · <a href="support.html">Support</a> · <a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a> · <a href="https://isafenet.app/">iSafeNet</a> · info@isafenet.app</p>
+    <p><b>Udapt is a wellness tool, not a medical device.</b> It does not provide medical advice, diagnosis or treatment. Always consult your doctor or a health professional, especially when training around an injury.</p>
+    <p>Apple, iPhone, Apple Watch, Apple Health and App Store are trademarks of Apple Inc. Photos on Unsplash: Jeremy Stewart, Vitaly Gariev, Randy Fath.</p>
+    <p>&copy; 2026 <a href="https://isafenet.app/">iSafeNet</a></p>
+  </div>
+</footer>
+</body>
+</html>
